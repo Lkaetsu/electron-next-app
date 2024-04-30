@@ -32,7 +32,8 @@
     "**/*.ts",
     "**/*.tsx",
     "types.d.ts",
-    ".next/types/**/*.ts"
-, "pages/index.jsx"  ],
+    ".next/types/**/*.ts",
+    "**/*.jsx",
+    "**/*.js"  ],
   "exclude": ["node_modules"]
 }
