@@ -5,10 +5,14 @@ import styles from "@/pages/index.module.css";
 export default function Page() {
   return (
     <div className={styles.container}>
-      <a href="http://localhost:3000/login" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-    </div>
+      <a id='Login card' href="http://localhost:3000/login" className={styles.card}>
+            <h3>Login &rarr;</h3>
+            <p>click para logar na sua conta</p>
+      </a>
+      <a id='SignUp card'href="http://localhost:3000/signup" className={styles.card}>
+            <h3>Signup &rarr;</h3>
+            <p>click para criar uma conta</p>
+      </a>
+  </div>  
   );
 }
