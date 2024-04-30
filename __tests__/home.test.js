@@ -8,6 +8,8 @@ it("App Router: Works with Server Components", () => {
   render(<Page />);
   const loginLink = document.getElementById('Login card');
   expect(loginLink).toHaveAttribute("href", "http://localhost:3000/login");
+  const singupLink = document.getElementById('SignUp card');
+  expect(singupLink).toHaveAttribute("href", "http://localhost:3000/signup");
   
 
 });
