@@ -20,12 +20,10 @@ In your terminal, run the following command:
 npx create-next-app --example with-jest with-jest-app
 ```
 
-```bash
-yarn create next-app --example with-jest with-jest-app
-```
+## Enter the app's terminal
 
 ```bash
-pnpm create next-app --example with-jest with-jest-app
+docker compose exec app ../bin/sh
 ```
 
 ## Running Tests
