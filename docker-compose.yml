@@ -1,6 +1,8 @@
 version: '3.8'
 services:
   web:
+    image: lkaetsu/electron-next:latest
+    container_name: electron-next
     build:
       context: ./
       target: runner

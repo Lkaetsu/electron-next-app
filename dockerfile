@@ -1,11 +1,11 @@
-FROM node:18-alpine AS deps
+FROM node:18.19-alpine AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
 COPY package.json package-lock.json ./
 RUN  npm install --omit=dev
 
-FROM node:18-alpine AS builder
+FROM node:18.19-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
@@ -14,7 +14,7 @@ ENV NEXT_TELEMETRY_DISABLED 1
 
 RUN npm run build
 
-FROM node:18-alpine AS runner
+FROM node:18.19-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV production
@@ -27,7 +27,9 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 
-USER nextjs
+RUN chown -R node /app/node_modules
+
+USER node
 
 EXPOSE 3000
 
