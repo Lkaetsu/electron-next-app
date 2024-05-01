@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   app:
-    image: lkaetsu/electron-next:latest
+    #image: lkaetsu/electron-next:latest
     container_name: app
     build:
       context: ./
