@@ -1,14 +1,11 @@
 # Electron.js + Next.js
 
-## How to Use
-
-
-## How to start electron
+## How to Use the App
 ```bash
 npm run electron
 ```
 
-## Enter the app's terminal
+## Enter the App's Terminal
 
 ```bash
 docker compose exec app ../bin/sh
@@ -18,4 +15,9 @@ docker compose exec app ../bin/sh
 
 ```bash
 npm test
+```
+
+## How to Start Electron's integration
+```bash
+npm run electron
 ```
