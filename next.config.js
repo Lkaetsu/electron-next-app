@@ -2,6 +2,10 @@
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
+    output: "export",
+    images: {
+      unoptimized: true
+    },
     webpack: (config, context) => {
       // Enable polling based on env variable being set
       if(process.env.NEXT_WEBPACK_USEPOLLING) {
