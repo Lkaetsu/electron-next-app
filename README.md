@@ -2,7 +2,7 @@
 
 ## How to Use the App
 ```bash
-npm run electron
+docker compose up -d
 ```
 
 ## Enter the App's Terminal
