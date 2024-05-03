@@ -1,6 +1,6 @@
 # Electron.js + Next.js
 
-## How to Use the App
+## How to Run the App
 ```bash
 docker compose up -d
 ```
@@ -12,6 +12,7 @@ docker compose exec app ../bin/sh
 ```
 
 ## Running Tests
+*Inside the App's Terminal
 
 ```bash
 npm test

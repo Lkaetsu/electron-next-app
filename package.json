@@ -10,7 +10,7 @@
     "start": "next start",
     "test": "jest --watch",
     "test:ci": "jest --ci",
-    "electron": "start electron"
+    "electron": "electron ."
   },
   "dependencies": {
     "@prisma/client": "^5.13.0",
